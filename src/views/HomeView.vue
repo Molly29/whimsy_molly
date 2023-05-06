@@ -1,9 +1,49 @@
+<template>
+  <aside class="aside-content">
+    <el-menu
+      :default-active="activeMenu"
+      class="el-menu-vertical-demo"
+      @open="handleOpen"
+      @close="handleClose"
+    >
+      <el-menu-item index="1">
+        <span>Home</span>
+      </el-menu-item>
+      <el-sub-menu index="2">
+        <template #title>
+          <span>Interview</span>
+        </template>
+        <el-menu-item-group title="Centering">
+          <el-menu-item index="2-1">Centered top and bottom</el-menu-item>
+          <el-menu-item index="2-2">Centered left and right</el-menu-item>
+          <el-menu-item index="2-3">Centered all</el-menu-item>
+        </el-menu-item-group>
+      </el-sub-menu>
+      <el-sub-menu index="3">
+        <template #title>
+          <span>Brainstorming</span>
+        </template>
+        <el-menu-item index="3-1">暂不知道</el-menu-item>
+      </el-sub-menu>
+    </el-menu>
+  </aside>
+  <main></main>
+</template>
+
 <script setup lang="ts">
-import TheWelcome from '@/components/TheWelcome.vue';
+import { ref } from 'vue';
+
+const activeMenu = ref(1);
+const handleOpen = (key: string, keyPath: string[]) => {
+  console.log(key, keyPath);
+};
+const handleClose = (key: string, keyPath: string[]) => {
+  console.log(key, keyPath);
+};
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-  </main>
-</template>
+<style scoped>
+.aside-content {
+  width: 260px;
+}
+</style>
