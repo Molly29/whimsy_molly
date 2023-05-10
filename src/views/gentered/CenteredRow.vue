@@ -1,5 +1,5 @@
 <template>
-  <div>Home</div>
+  <div>Centered Row</div>
 </template>
 
 <script setup></script>

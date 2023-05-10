@@ -1,5 +1,5 @@
 <template>
-  <div>Home</div>
+  <div>gentered-column</div>
 </template>
 
 <script setup></script>
