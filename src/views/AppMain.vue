@@ -17,7 +17,7 @@
         <el-menu-item-group title="Centering">
           <el-menu-item index="/gentered/gentered-column">Centered Column</el-menu-item>
           <el-menu-item index="/gentered/gentered-row">Centered Row</el-menu-item>
-          <el-menu-item index="2-3">Centered all</el-menu-item>
+          <el-menu-item index="/gentered/gentered-all">Centered all</el-menu-item>
         </el-menu-item-group>
       </el-sub-menu>
       <el-sub-menu index="3">
